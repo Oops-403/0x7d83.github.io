@@ -12,9 +12,9 @@ export default defineConfig({
 
     // theme config
     themeConfig: {
-        logo: '',
+        logo: './logo.png',
         // 左侧小标题
-        siteTitle: 'siteTitle',
+        siteTitle: '目录',
         // 右侧小标题
         outlineTitle: 'outline-title',
         // 顶上导航
