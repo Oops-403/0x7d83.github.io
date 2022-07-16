@@ -5,7 +5,7 @@ export default defineConfig({
     title: 'shlynn',
     titleTemplate: '开发笔记',
     // Description for the site. This will render as a <meta> tag in the page HTML.
-    description: 'just a static site generator test',
+    description: '前端开发博客笔记',
 
     // dark mode
     appearance: true, 
@@ -14,9 +14,9 @@ export default defineConfig({
     themeConfig: {
         logo: './logo.png',
         // 左侧小标题
-        siteTitle: '目录',
+        siteTitle: '目录导航',
         // 右侧小标题
-        outlineTitle: 'outline-title',
+        outlineTitle: '当前页面导航',
         // 顶上导航
         nav: [
             {
@@ -36,7 +36,7 @@ export default defineConfig({
         // 左侧边栏
         sidebar: [
             {
-                text: 'Guide111',
+                text: 'Web前端',
                 items: [
                     {
                         text: '介绍',
@@ -57,18 +57,6 @@ export default defineConfig({
             },
             {
                 icon: 'discord',
-                link: ''
-            },
-            {
-                icon: 'instagram',
-                link: ''
-            },
-            {
-                icon: 'facebook',
-                link: ''
-            },
-            {
-                icon: 'youtube',
                 link: ''
             }
         ],
