@@ -89,8 +89,8 @@ export default defineConfig({
     },
 
     // the base URL the site will be deployed
-    // base: '/frontend.github.io/',
-    base: '/',
+    // base: '/',
+    base: '/frontend.github.io/',
 
     /**
      * Use git commit to get the timestamp.
