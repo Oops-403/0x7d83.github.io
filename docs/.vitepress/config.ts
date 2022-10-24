@@ -22,7 +22,25 @@ const sidebarConfig: DefaultTheme.Sidebar = [
         items: [
             {
                 text: '介绍',
-                link: './indroduction-1'
+                link: '../front-end/demo'
+            }
+        ]
+    },
+    {
+        text: 'Web后端',
+        items: [
+            {
+                text: '介绍',
+                link: '../front-end/demo'
+            }
+        ]
+    },
+    {
+        text: 'Web后端',
+        items: [
+            {
+                text: '介绍',
+                link: '../front-end/demo'
             }
         ]
     }
