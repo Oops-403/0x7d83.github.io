@@ -8,9 +8,13 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "prepare": "husky install"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.0",
     "vitepress": "^1.0.0-alpha.22",
     "vue": "^3.2.41"
   }

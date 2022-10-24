@@ -101,15 +101,15 @@ const socialLinksConfig: DefaultTheme.SocialLink[] = [
     }
 ]
 
+const editLinkConfig: DefaultTheme.EditLink = {
+    pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+    text: '一起来编辑吧'
+}
+
 // 当设置了sidebar时footer不会出现
 const footerConfig: DefaultTheme.Footer = {
     message: 'Released under the MIT license',
     copyright: 'copyright 2022 shlyn'
-}
-
-const editLinkConfig: DefaultTheme.EditLink = {
-    pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-    text: '一起来编辑吧'
 }
 
 // 广告
@@ -149,11 +149,11 @@ export default defineConfig({
     themeConfig: {
         logo: './logo.png', // 左侧小标题icon
         siteTitle: '目录导航',// 左侧小标题
-        outlineTitle: '当前页面导航',// 右侧小标题
+        outlineTitle: 'outlines',// 右侧小标题
         nav: navConfig, // 顶上导航菜单
         sidebar: sidebarConfig, // 左侧边栏
         socialLinks: socialLinksConfig,
-        footer: footerConfig,
+        // footer: footerConfig,
         editLink: editLinkConfig,
         lastUpdatedText: '更新时间'
         // carbonAds: carbonAdsConfig
