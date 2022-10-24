@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,a}from"./app.f784b411.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"front-end/demo.md","lastUpdated":1666612647000}'),n={name:"front-end/demo.md"},s=a("p",null,"front-end/demo",-1),r=[s];function d(c,_,p,m,i,l){return o(),t("div",null,r)}const h=e(n,[["render",d]]);export{u as __pageData,h as default};
