@@ -16,53 +16,96 @@ const navConfig: DefaultTheme.NavItem[] = [
     }
 ]
 
-const sidebarConfig: DefaultTheme.Sidebar = [
-    {
-        text: 'Web前端',
-        items: [
-            {
-                text: '介绍',
-                link: '../front-end/demo'
-            }
-        ]
-    },
-    {
-        text: 'Web后端',
-        items: [
-            {
-                text: '介绍',
-                link: '../front-end/demo'
-            }
-        ]
-    },
-    {
-        text: 'Web后端',
-        items: [
-            {
-                text: '介绍',
-                link: '../front-end/demo'
-            }
-        ]
-    }
-]
+const sidebarConfig: DefaultTheme.Sidebar = {
+    '/': [
+        {
+            text: '目录一',
+            items: [
+                {
+                    text: 'web前端',
+                    link: '/front-end/demo'
+                }
+            ]
+        }
+    ],
+    '/front-end/': [
+        {
+            text: 'Web前端',
+            collapsible: true,
+            collapsed: false,
+            items: [
+                {
+                    text: '介绍',
+                    link: '/front-end/demo',
+                }
+            ]
+        },
+        {
+            text: '前端项目优化',
+            items: [
+                {
+                    text: '介绍',
+                    link: '/front-end/demo'
+                }
+            ]
+        }
+    ],
+    '/back-end/': [
+        {
+            text: 'Web前端',
+            collapsible: true,
+            items: [
+                {
+                    text: '介绍',
+                    link: '/front-end/demo',
+                }
+            ]
+        },
+        {
+            text: '前端项目优化',
+            items: [
+                {
+                    text: '介绍',
+                    link: '/front-end/demo'
+                }
+            ]
+        }
+    ],
+    '/blockchain/': [
+        {
+            text: '什么是区块链',
+            collapsible: true,
+            items: [
+                {
+                    text: '介绍',
+                    link: '/front-end/demo',
+                }
+            ]
+        },
+        {
+            text: 'solidity',
+            items: [
+                {
+                    text: '介绍',
+                    link: '/front-end/demo'
+                }
+            ]
+        }
+    ]
+}
 
 const socialLinksConfig: DefaultTheme.SocialLink[] = [
     {
         icon: 'github',
-        link: ''
-    },
-    {
-        icon: 'twitter',
-        link: ''
-    },
-    {
-        icon: 'discord',
-        link: ''
+        link: 'https://github.com/shlyn/shlyn.github.io'
     }
 ]
 
 // 当设置了sidebar时footer不会出现
-const footerConfig: DefaultTheme.Footer = {}
+const footerConfig: DefaultTheme.Footer = {
+    message: 'Released under the MIT license',
+    copyright: 'copyright 2022 shlyn'
+}
 
 const editLinkConfig: DefaultTheme.EditLink = {
     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
@@ -92,13 +135,13 @@ const markdownConfig: MarkdownOptions = {
 export default defineConfig({
     lang: 'en-US',
     title: 'shlynn',
-    titleTemplate: '开发笔记',
+    titleTemplate: '前端开发笔记',
 
     /**
      * Description for the site.
      * This will render as a <meta> tag in the page HTML.
      */
-    description: '前端开发博客笔记',
+    description: '前端开发笔记',
 
     // dark mode
     appearance: true,
@@ -112,8 +155,8 @@ export default defineConfig({
         socialLinks: socialLinksConfig,
         footer: footerConfig,
         editLink: editLinkConfig,
-        lastUpdatedText: '更新时间',
-        carbonAds: carbonAdsConfig
+        lastUpdatedText: '更新时间'
+        // carbonAds: carbonAdsConfig
     },
 
     // the base URL the site will be deployed default '/'
