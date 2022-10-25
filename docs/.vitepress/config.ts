@@ -17,35 +17,37 @@ const navConfig: DefaultTheme.NavItem[] = [
 ]
 
 const sidebarConfig: DefaultTheme.Sidebar = {
-    '/': [
-        {
-            text: '目录一',
-            items: [
-                {
-                    text: 'web前端',
-                    link: '/front-end/demo'
-                }
-            ]
-        }
-    ],
     '/front-end/': [
         {
-            text: 'Web前端',
+            text: 'HTML',
             collapsible: true,
-            collapsed: false,
+            collapsed: true,
             items: [
                 {
-                    text: '介绍',
-                    link: '/front-end/demo',
+                    text: '如何实现图片懒加载',
+                    link: '/front-end/html/image-lazy-load',
                 }
             ]
         },
         {
-            text: '前端项目优化',
+            text: 'CSS',
+            collapsible: true,
+            collapsed: true,
             items: [
                 {
                     text: '介绍',
                     link: '/front-end/demo'
+                }
+            ]
+        },
+        {
+            text: '性能优化',
+            collapsible: true,
+            collapsed: true,
+            items: [
+                {
+                    text: '如何优化首屏渲染时间',
+                    link: '/front-end/optimization/home-page'
                 }
             ]
         }
@@ -54,6 +56,7 @@ const sidebarConfig: DefaultTheme.Sidebar = {
         {
             text: 'Web前端',
             collapsible: true,
+            collapsed: true,
             items: [
                 {
                     text: '介绍',
